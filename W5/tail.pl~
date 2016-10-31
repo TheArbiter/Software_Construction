@@ -1,0 +1,27 @@
+#!/usr/bin/perl -w
+
+
+my $num = 10;
+
+if (@ARGV+0 and $ARGV[0] =~ /^-(\d+)$/) {
+   $num = $1;
+   shift @ARGV;
+}
+
+if (@ARGV+0 == 0){
+   push my @lines, <>;
+   print @lines[-$num..-1];
+} else {
+   foreach my $f (@ARGV) {
+      open(my $F,"<",$f) or die "$0: Can't open $f: $!\n";
+      print "==> $f <==\n" if ($#ARGV >= 1);
+      push my @lines, <$F>;
+      
+      if ($num < @lines){
+         print @lines[-$num..-1];
+      } else {
+         print @lines;
+      }  
+   }
+}
+

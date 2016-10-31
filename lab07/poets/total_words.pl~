@@ -1,0 +1,10 @@
+#!/usr/bin/perl -w
+
+#my $words = 0;
+
+while ($line = <STDIN>){
+   chomp $line;
+   $words += scalar(split /[^A-Za-z]/ ,$line);
+}
+
+print "$words words\n";

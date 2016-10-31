@@ -1,0 +1,68 @@
+#!/usr/bin/perl -w
+
+foreach my $arg (@ARGV) {
+
+   my ($count,$words,$target,%poets,@Tnew);  
+
+	foreach my $poet (glob "poets/*.txt") {
+		$poet =~ s/poets\///;
+		$poet =~ s/\.txt//;
+		$poet =~ tr/_/ /;
+		$poets{"$poet"} {temp1} = 0;
+	}
+	open (F, "<", $files) or die "$0: $files: $!\n";
+
+	while (<T>) {
+		my @Titems = split(/[^A-Za-z]/, $_);
+		foreach (@Titems){
+		    if( ( defined $_ ) and !($_ =~ /^$/ )){
+				push (@Tnew, $_);
+			}
+		}
+	}
+	
+	foreach my $file (glob "poets/*.txt") {
+		$words = 0;
+		open (F, "<", $file) or die "$0: $files: $!\n";
+		my $poet = $file;
+		$poet =~ s/poets\///;
+		$poet =~ s/\.txt//;
+		$poet =~ tr/_/ /;
+		my @Fnew;
+		while (<F>) {
+			my @Fitems = split(/[^A-Za-z]/, $_);
+			foreach my $word (@Fitems){
+				$word = lc($word);
+			    if( ( defined $word ) and !($word =~ /^$/ )){
+			        push (@Fnew, $word);
+			        $words++;
+			        if ( !defined $poets{"$poet"}{"$word"} ) {
+			        	$poets{"$poet"}{"$word"} = 1;
+			    	} else {
+			    		$poets{"$poet"}{"$word"}++;
+			    	}
+			    }
+			}
+		}
+		$poets{"$poet"}{temp2} = $words;
+	}
+	foreach $target (@Tnew) {
+		$target = lc($target);
+		foreach my $poet (glob "poets/*.txt") {
+			$poet =~ s/poets\///;
+			$poet =~ s/\.txt//;
+			$poet =~ tr/_/ /;
+			if ( !defined $poets{"$poet"}{"$target"} ) {
+				$poets{"$poet"}{temp1} = $poets{"$poet"}{temp1} + log( 1 / $poets{"$poet"}{temp2} );
+			} else {
+				$poets{"$poet"}{temp1} = $poets{"$poet"}{temp1} + log( ($poets{"$poet"}{"$target"} + 1) / $poets{"$poet"}{temp2} );
+			}
+		}
+	}	
+	my ($poet) = sort { $poets{$b}{temp1} <=> $poets{$a}{temp1} } keys %poets;
+
+	printf "%s most resembles the work of %s (log-probability=%5.1f)\n", $arg, $poet, $poets{"$poet"}{temp1};
+}	
+
+
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for x in *.jpg
+do
+   if test -f "`echo "$x" | sed s/.jpg/.png/g`"
+   then
+      "`echo "$x" | sed s/.jpg/.png/g`"
+      exit 1
+   else   
+     convert "`echo "$x"`" "`echo "$x" | sed s/.jpg/.png/g`"   
+   rm -r "$x"
+   fi   
+done
+
