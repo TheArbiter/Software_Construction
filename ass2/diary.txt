@@ -1,0 +1,113 @@
+10/10/2015
+Downloaded medium dataset for ass2
+Got to start work on Ass2 tomorrow hopefully otherwise on monday
+
+11/10/2015
+Added Profile pics to bitter
+Though there is this huge space appearing which needs to be fixed
+Removed passwords from appearing
+Removed most email address's also through a hacky way need to find a better way for that
+Added login page 
+
+18.00 PM
+Need to do testing to see if it works properly at 
+Ok now i need to figure out a way of making it show the correct profile when logging in without showing the first profile
+but before that have to create all the password files 
+
+18.15PM
+Well I got rid of the huge space problem i had
+
+12/10/2015
+12.30PM 
+Got bleats to be printed out on each profile page
+
+17.30PM
+Reading through css need to make this website look better
+
+14/10/2015
+Did some CSS work included a background image
+fixed which account should be displayed according to the password entered
+Need to find a way of fixing cookies
+
+15/10/2015
+Applied bootstrap css for login page
+got a nav bar working
+problems with loing page
+
+17/10/2015
+got login page working yay!! 
+got logout working yay!!
+
+18/10/2015
+Made some changes to the profile page
+I dont know how to get a cookie working
+Finding it hard to move forward because of that
+
+Making good progress on my css interesting mmmm
+
+Need to figure out how to get all the followings into an array so I can display it on the following page and also figure out a way to display all the followers
+Need to also figure out how to avoid showing password and username in the url
+learn how to get a cookie working
+
+19/10/2015
+Worked on some bits of getting my following list
+
+20/10/2015
+Got my following list done per user
+Maybe when i get further ill think about how to follow and unfollow but thats for later
+and also how to get to the users page when i click their name
+
+Worked on Bleats and showing their previous replies
+Having an issue which i need to ask vincent tomorrow
+
+Things to ask from the tutors tomorrow 
+*How to set a cookie and fetch a cookie
+*Figure out the previous bleats problem
+*Figure out how to split the string in the following section to appear like the followers section
+*Find out how i can hyperlink text so that when I click a name it will go to that page
+
+21/10/2015
+Asked tutor how to get cookies working didnt go to plan ended up getting recked
+had to spend the rest of the time in the tutorial fixing item
+
+22/10/2015
+Got a home page set up to display bleats of the profiles the user is following
+Recursive on the replies to those bleats dont seem to be working I dont know what to do
+Though problem is im currently serving it as a tab on the user page need to figure out how to make it appear on the navbar
+Still trying to figure out these stupid cookies
+Got help from nick with related to cookies
+
+23/10/2015
+Fixed my nav bar problem now looks better.
+Working on cookies. Ended up somewhere positive got to work on it tomorrow if it doesnt work get creative 
+
+24/10/2015
+Got the search bar working "Its a miracle I hope it doesnt screw me up"
+Got cookies working I think or not sure if ive got creative and brute forcing either way im able to go to other pages without getting logged out
+Got an edit information page up need to fix info appearing in url issues
+
+25/10/2015
+Got Bleats to appear working somewhat
+Figured a way to change profile picture and cover picture
+Info appearing in url issues fixed had a form that was not closed thats why
+Got profile text working
+Got delete account working 90% unable to delete directory dont know why its not working 
+Seems like thats all I can do in this assignment my brain is not working properly
+
+Stuff I have managed to get done so far is
+Display User Information & Bleats
+Interface
+Logging In & Out
+Search for Users By Username (unable to do full name)
+Sending Bleats (works alright but at times produces duplicates)
+Displaying Relevant Bleats
+Bleat responses
+User Account Creation
+Profile Text (ommited HTML since its debatable what is safe and what is not)
+Change Password
+Uploading & Deleting Images (pro pic & cover pic)
+Editing Information
+Deleting Bleats (works at times sometimes deletes the wrong bleat)
+Deleting Bitter Account
+
+Thats all and for advanced features maybe we can include security

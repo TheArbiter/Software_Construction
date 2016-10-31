@@ -1,0 +1,153 @@
+/*
+ * written by andrewt@cse.unsw.edu.au September 2015
+ * as a starting point for COMP2041/9041 assignment 2
+ * http://cgi.cse.unsw.edu.au/~cs2041/assignments/bitter/
+ *
+ * Change (or replace) the CSS below to create you own look-and-feel
+ *
+ * You will probably want to add  CSS to this file too
+ */
+
+.bitter_heading_login_page { 
+	padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+	color: #FFFFFF;
+}
+
+.bitter_heading_user_page {
+	background-color: #ABCDEF; 
+	padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+	color: #FFFFFF;
+}
+
+.bitter_user_details {
+    background-color: #F9F8F6;
+	position: absolute;
+	left: 100px
+	top: 55px
+	text-align: justify;
+    white-space: pre-line;
+    border:thin solid #204142;
+    border-radius: 1em;
+    padding-left: 0.42em;
+	color: BLACK;
+	width: 400px;
+	height: 550px;
+}
+
+.bitter_user_bleat_details {
+    background-color: #F9F8F6;
+	position: static;
+    white-space: pre;
+    border:thin solid #204142;
+    border-radius: 1em;
+    padding-left: 0.42em;
+	color: BLACK;
+}
+
+.bitter_user_edit_details {
+    background-color: #F9F8F6;
+}
+
+.bitter_button {
+    background-color: #FEDBCA;
+    border:thin solid #904142;
+    border-radius: 0.42em;
+    color: #904142;
+}
+.bitter_login_page {
+	background-color: #FFFFFF;
+	position: absolute;
+	right: 20px;
+    color: #204142;
+    white-space: pre;
+    border:thin solid #204142;
+	border-width: 2px;
+    padding-left: 0.42em;
+	padding-right: 0.42em;
+	margin:12px 12px 6px;
+	width: 220px;
+	color: BLACK;
+}
+
+body {
+	background-image: url("background.jpg"); 
+}
+.name {
+	color: black;
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fb-profile img.fb-image-lg{
+    z-index: 0;
+    width: 100%;  
+    margin-bottom: 10px;
+}
+
+.fb-image-profile
+{
+    margin: -90px 10px 0px 50px;
+    z-index: 9;
+    width: 20%; 
+}
+
+@media (max-width:768px)
+{
+    
+.fb-profile-text>h1{
+    font-weight: 700;
+    font-size:16px;
+}
+
+.fb-image-profile
+{
+    margin: -45px 10px 0px 25px;
+    z-index: 9;
+    width: 20%; 
+}
+}
+
+/*---------*/
+@media (min-width:1200px) {
+	.container {
+		width:1170pxcontainer-inner
+	}
+}
+.container-fluid {
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto
+}
+
+
+.modal-body .form-horizontal .col-sm-2,
+.modal-body .form-horizontal .col-sm-10 {
+    width: 100%
+}
+
+.modal-body .form-horizontal .control-label {
+    text-align: right;
+}
+.modal-body .form-horizontal .col-sm-offset-2 {
+    margin-left: 15px;
+}
