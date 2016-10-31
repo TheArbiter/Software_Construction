@@ -1,0 +1,80 @@
+Day 1
+Started work on Assignment 1 on 5/9/2015
+Submitted First part of the code Andrew's Code
+
+Day 2
+Started subest 0 on 7/9/2015 at 10.30 AM 
+Pushed first bit of the code at around 12 30 
+Had a few problems with trailing white spaces
+Continued on fixing trailing white space problems on Subset 0 at 9pm
+Trailing white spaces fixed at around 10.15pm
+
+Day 3
+Pushed files to github at 11 30 AM on 8/9/2015
+Starting work on subset 0 trying to fix last test 
+Subset 0 done YAY!!!!
+Completed subset 0 at 12 10 AM 
+Pushed files to github at 12 15 AM
+
+Day 4
+Started work on shpy.pl at 11 45 PM on 9/9/2015
+Finished test 1 on level 1 at 11.50PM
+Pushed files to githun at 11.52PM
+made small tweaks to the file and pushed again at 00.02AM
+Created functions to make work look neater and also to help me in future tests
+
+Day 5
+Started work on the remains of level 1 at 6 PM on 10/09/2015
+Started pushing python code to arrays and then print the arrays
+The reason for this was because I needed to get the import stuff above the other python code
+So two arrays were created for this @imports and @python
+Managed to convert 90% of shell to python for all test in level 1
+Need to fix only the parts where I need to insert a ' ' in echo lines and for lines
+Pushed work to gitlab at 11 23 PM 
+
+Day 6 
+Started work on level 2  at 11 50AM on 14/09/2015
+Passed all dryrun test on level 2 and pushed shpy.pl to gitlab at 1.18PM
+Started work on level 3 at 1 00 PM
+passed all dryrun test on level 3 at 4 50 PM
+pushed all work to gitlab at 4 52PM
+Learned a good lesson that I should use \bany_word\b 
+to make sure that smaller words dont accidentally fall into the if statements when doing pattern match
+Got to make code look more cleaner have to do that later 
+
+Day 7
+Started Debugging at 17.52PM on 15/09/2015
+Started work on level 4 at 22.19 PM
+Passed 2 dry run test on level 4 and pushed files to git hub at 23.30PM
+
+Day 8 
+Started fixing for loop problems at 11.00AM on 19/09/2015
+fixed for loop problems at 11.53PM and pushed files to gitlab
+Almost done on level 4 dryrun test
+have one line which is producing a print but not sure how to get rid of it 
+have to check during lab time
+Got to start on demo and test files
+
+Day 9
+debuggin level 4 fixed print line on 23/09/2015 at 1.15PM
+created demo.sh files
+added demo00.sh file to gitlab
+tweaked shpy.pl to work a little for demo00.sh
+pushed files to gitlab at 14.45 PM
+
+Day 10 
+started work on demo files at 16.00 PM on 24/09/2015
+Made small changes to shpy.pl to fit the demo files
+Not sure if demo files are outputing correct python code
+most likely not outputing correct python code
+Ran all level test again after making changes to shpy
+had to fix a bit due to the changes made to demo.sh that affected 2 level files
+Pushed all files to gitlab at 19.10 PM
+Have to start on test files tomorrow 
+
+Day 11
+Added comments and split the if statements to make it more readable
+pushed files to gitlab on 26/09/2015 at 00 30 AM
+created first test file at 11.45 AM
+created all test files and checked them most of them working all done at 13 05 PM
+Having problems pushing files to gitlab giving errors so unable to push

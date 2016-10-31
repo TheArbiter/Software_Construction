@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Hi, please type a line: "
+read line
+echo "The word you entered is: $line"

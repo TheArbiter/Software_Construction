@@ -1,0 +1,15 @@
+#!/usr/bin/perl -w
+
+$count = 0;
+$a = 5;
+$b = 10;
+
+if ($a){
+   $count++;
+} 
+if ($b){
+   $count++;
+   print "$count\n";
+}
+print "Yoyo\n" if $count == 1;
+print "bleh\n" if $count == 2;
